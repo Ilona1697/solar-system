@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  background: #000;
+  overflow: hidden;
+}
+.main {
+  color: white;
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.main__inner {
+  height: 100%;
+  transform: scale(1.4);
+}
+.item {
+  transform: rotateX(70deg);
+}
+
+/* CONTROL */
+.control {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.control .btn-start {
+  background-color: #4caf50;
+  border: none;
+  color: #ffffff;
+  padding: 15px 62px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin: 16px 20px !important;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  border-radius: 15px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  top: -128px;
+  left: -5px;
+  border-radius: 10px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* SUN */
+
+.sun {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.sun img {
+  width: 100px;
+  height: 100px;
+  z-index: 100;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/*  ORBITS */
+
+.orbit {
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 2;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.animation__active {
+  animation: linear 0s infinite orbit;
+}
+
+.orbit-one {
+  width: 150px;
+  height: 150px;
+  top: -178px;
+  right: -26px;
+  animation-duration: 4s;
+}
+
+.orbit-two {
+  width: 225px;
+  height: 225px;
+  top: -205px;
+  right: -63px;
+  animation-duration: 7s;
+}
+.orbit-three {
+  width: 300px;
+  height: 300px;
+  top: -240px;
+  right: -100px;
+  animation-duration: 7s;
+}
+.orbit-four {
+  width: 375px;
+  height: 375px;
+  top: -280px;
+  right: -137px;
+  animation-duration: 9s;
+}
+.orbit-five {
+  width: 450px;
+  height: 450px;
+  top: -316px;
+  right: -174px;
+  animation-duration: 6s;
+}
+.orbit-six {
+  width: 525px;
+  height: 525px;
+  top: -353px;
+  right: -211px;
+  animation-duration: 8s;
+}
+.orbit-seven {
+  width: 600px;
+  height: 600px;
+  top: -390px;
+  right: -248px;
+  animation-duration: 8s;
+}
+.orbit-eight {
+  width: 675px;
+  height: 675px;
+  top: -427px;
+  right: -285px;
+  animation-duration: 9s;
+}
+@keyframes orbit {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+/* PLANETS */
+.planet {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  transform: rotateX(0deg);
+}
+.planet img {
+  width: 100%;
+  height: 100%;
+}
+.planet-one {
+  width: 20px;
+  height: 20px;
+  top: 65px;
+  left: -10px;
+}
+
+.planet-two {
+  width: 27px;
+  height: 27px;
+  top: 209px;
+  left: 104px;
+}
+.planet-three {
+  width: 30px;
+  height: 30px;
+  top: 130px;
+  left: 283px;
+}
+.planet-four {
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 79px;
+}
+.planet-five {
+  width: 52px;
+  height: 52px;
+  top: 299px;
+  left: 0px;
+}
+.planet-six {
+  width: 47px;
+  height: 47px;
+  top: 459px;
+  left: 379px;
+}
+.planet-seven {
+  width: 40px;
+  height: 40px;
+  top: 65px;
+  left: 486px;
+}
+.planet-eight {
+  width: 38px;
+  height: 38px;
+  top: 65px;
+  left: 93px;
+}
