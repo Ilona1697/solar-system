@@ -18,7 +18,7 @@ body {
 }
 .main__inner {
   height: 100%;
-  transform: scale(1.4);
+  transform: scale(1.1);
 }
 .item {
   transform: rotateX(70deg);
