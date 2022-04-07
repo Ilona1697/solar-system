@@ -4,10 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/webp" href="/img/favicon.webp" sizes="96x96" />
     <title>Solar system</title>
   </head>
   <body>
+    <div class="wrapper">
+      <main class="main">
+        <div class="main__inner">
+          <div class="sun" id="sun">
+            <img src="/img/sun.png" alt="" />
+          </div>
+        </div>
+        <div class="control">
+          <button id="btn-start" class="btn-start">start</button>
+          <div class="dropdown">
+            <button class="dropbtn">1x</button>
+            <div class="dropdown-content" id="dropdown-content">
+              <a href="#">0.5x</a>
+              <a href="#">1x</a>
+              <a href="#">1.5x</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>
