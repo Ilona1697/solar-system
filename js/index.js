@@ -116,10 +116,11 @@ class Orbit {
   }
   setSpeed(speed) {
     const orbits = document.querySelectorAll(".orbit");
+    const dropbtn = document.querySelector(".dropbtn");
     orbits.forEach((elem) => {
       elem.style.animationDuration = speed + "s";
     });
-    console.log(this.initSpeed, speed, this.selectedSpeed);
+    dropbtn.innerHTML = this.selectedSpeed + "x";
   }
 }
 
