@@ -1,6 +1,7 @@
 "use strict";
+const sun = document.getElementById("sun");
 const btnStart = document.getElementById("btn-start");
-
+const dropbtn = document.querySelector(".dropbtn");
 const dropdownContent = document.getElementById("dropdown-content");
 const speedBtns = dropdownContent.querySelectorAll("a");
 
@@ -63,8 +64,6 @@ class Planet {
     this.imgUrl = imgUrl;
   }
   render() {
-    const sun = document.getElementById("sun");
-
     return (sun.innerHTML += `<div class="item">
               <div class="orbit ${this.classNameOrbit}">
                 <div class="planet ${this.classNamePlanet}">
@@ -116,7 +115,7 @@ class Orbit {
   }
   setSpeed(speed) {
     const orbits = document.querySelectorAll(".orbit");
-    const dropbtn = document.querySelector(".dropbtn");
+
     orbits.forEach((elem) => {
       elem.style.animationDuration = speed + "s";
     });
